@@ -5,16 +5,18 @@ $("#sendMail").on("click",function() {
   var message = $("#message").val().trim(;)
 
   if(email== "") {
-    $("#errorMess").text("Введите Email")
+    $("#errorMess").text("Введите Email");
+    return false;
+  } else if(name== "") {
+    $("#errorMess").text("Введите имя");
+    return false;
+  } else if(phone== "") {
+    $("#errorMess").text("Введите телефон");
+    return false;
+  } else if(message.lenght <5 ) {
+    $("#errorMess").text("Введите сообщение");
+    return false;
   }
-  else if(name== "") {
-    $("#errorMess").text("Введите имя")
-  }
-  else if(phone== "") {
-    $("#errorMess").text("Введите телефон")
-  }
-  else if(message.lenght <5 ) {
-    $("#errorMess").text("Введите сообщение")
-  }
+  $("#errorMess").text("");
 
 });
