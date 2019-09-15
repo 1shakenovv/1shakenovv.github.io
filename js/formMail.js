@@ -1,8 +1,8 @@
 $("#sendMail").on("click",function() {
-  var email = $("#email").val().trim(;)
-  var name = $("#name").val().trim(;)
-  var phone = $("#phone").val().trim(;)
-  var message = $("#message").val().trim(;)
+  var email = $("#email").val().trim();
+  var name = $("#name").val().trim();
+  var phone = $("#phone").val().trim();
+  var message = $("#message").val().trim();
 
   if(email== "") {
     $("#errorMess").text("Введите Email");
