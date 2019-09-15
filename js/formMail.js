@@ -13,7 +13,7 @@ $("#sendMail").on("click",function() {
   } else if(phone== "") {
     $("#errorMess").text("Введите телефон");
     return false;
-  } else if(message.lenght <5 ) {
+  } else if(message.length <5 ) {
     $("#errorMess").text("Введите сообщение");
     return false;
   }
