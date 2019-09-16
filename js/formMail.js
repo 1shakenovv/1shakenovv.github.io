@@ -33,7 +33,7 @@ $("#sendMail").on("click",function() {
         alert("Были ошибки, сообщение не отправлено")
       else {
         $("#mailForm").trigger("reset");
-      }
+      },
       $("#sendMail").prop("disabled",false);
     },
   });
