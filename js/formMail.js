@@ -31,9 +31,8 @@ $("#sendMail").on("click",function() {
     success: function(data){
       if(!data)
         alert("Были ошибки, сообщение не отправлено")
-      else {
+      else 
         $("#mailForm").trigger("reset");
-      },
       $("#sendMail").prop("disabled",false);
     },
   });
