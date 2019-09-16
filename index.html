@@ -1,35 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <!-- Bootstrap CSS -->
-    <title>Форма обратной связи!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-cquiv="X-UA-Compatible" content="ie=edge">
+    <title>Обратная связь</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   </head>
   <body>
     <div class="container">
-      <h1>Обратная связь!</h1>
+      <h1>Обратная связь</h1>
       <form>
         <input type="email" id="email" name="email" placeholder="Email" class="form-control"><br>
         <input type="text" id="name" name="name" placeholder="Введите имя" class="form-control"><br>
         <input type="phone" id="phone" name="phone" placeholder="Телефон" class="form-control"><br>
         <textarea name="message" id="message" placeholder="Сообщение" class="form-control"></textarea><br>
-        <button type="button" id = "sendMail" class="btn btn-success">Отправить</button>
-
+        <button type="button" id="sendMail" class="btn btn-success">Отправить</button>
       </form>
+      <div id="errorMess">
 
-      <div id = "errorMessage"></div>
+      </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/formMail.js">
-
-    </script>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/formMail.js"></script>
   </body>
 </html>
